@@ -1,0 +1,17 @@
+INTERRUPT me user button
+drivers > Leds > το νουκλεο έχει μονο πρασινο 
+
+while(1)
+{
+	input valid ...
+	else ...
+
+
+// μαυρο button > Reset
+//
+
+
+	
+}
+
+και το input του χρήστη με interrupt 

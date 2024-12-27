@@ -1,0 +1,26 @@
+; Inputs: r0 contains pointer to the start of the string
+; Outputs: None
+
+        AREA    parse_string, CODE, READONLY
+        EXPORT  parse_string
+
+parse_string
+        ; Load the pointer to the string into r1
+        LDR     r1, [r0]
+
+        ; Loop through each character in the string
+        loop
+        LDRB    r2, [r1], #1   ; Load the next character into r2 and increment r1
+        CMP     r2, #0         ; Check if r2 is equal to the null terminator
+        BEQ     end_loop       ; If r2 is equal to the null terminator, exit the loop
+        ; Perform some operation on the character here, such as printing it or processing it in some way
+        ; ...
+
+        ; Repeat the loop for the next character
+        B       loop
+
+        ; End the loop and return from the function
+        end_loop
+        BX      lr
+
+        END

@@ -1,0 +1,30 @@
+cmsis > core
+Device > startup
+Compiler > I/O > STDERR, STDIN STDOUT σε ΙΤΜ
+
+
+Ραβδάκι > C/C++ > Include τους drivers στο include path
+
+	> Debug > Κανονικά ηθελε να έχεις driver για το debug αλλά εσυ τον έχεις
+	
+	> ST-LINK DEBUGGER
+
+	> Για να δουλεύει η printf > Debug > Settings δεξια > Trace > Core Clock = 16 MHz και Trace Enable > ITM STIMULUS PORTS 
+
+Source Group 1 > Δεξι κλικ > main.c
+Source Group 2 > Τους Drivers
+
+Options for Target > Debug > Use Simulator
+
+View > Serial Windows > Printf Viewer
+
+
+Download Drivers > Add new group > δεξι κλικ > add existing files
+
+
+Options for target > C/C++ > Inlude path
+
+
+UART header > inlude uart.h > uart.init(115200) uart enable uart.print
+
+Options for Target > mobextern (serial consol)
